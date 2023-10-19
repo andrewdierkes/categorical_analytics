@@ -119,7 +119,7 @@ get_ipython().run_cell_magic('R', '', "\nggplot(data = df_temp_r, aes(x=factor(f
 # In[342]:
 
 
-get_ipython().run_cell_magic('R', '', 'cor.test(df_temp_r$fluid_front_final_location, df_temp_r$pf_seconds)\n')
+get_ipython().run_cell_magic('R', '', 'cor.test(df_temp_r$fluid_front_final_location, df_temp_r$pf_seconds, method = 'kendall')\n')
 
 
 # <p> Not a statisitically significant correlation at 37C
